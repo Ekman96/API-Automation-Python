@@ -7,3 +7,9 @@ def get(endpoint: str):
 
 def post(endpoint: str, payload: dict):
     return requests.post(f"{BASE_URL}{endpoint}", json=payload)
+
+def put(endpoint: str, payload: dict):
+    return requests.put(f"{BASE_URL}{endpoint}", json=payload)
+
+def delete(endpoint: str):
+    return requests.delete(f"{BASE_URL}{endpoint}")
